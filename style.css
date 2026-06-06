@@ -11,10 +11,12 @@ body{
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .wrapper{
     width: 1905px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -155,7 +157,6 @@ header nav a{
     gap: 135px;
     justify-content: center;
     align-items: center;
-
 }
 
 .swiper .swiper-slide{
@@ -163,10 +164,24 @@ header nav a{
     flex-direction: column;
     align-items: center;
     border-radius: 4px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.103);
 }
 
 .swiper .swiper-slide img:first-child{
     border-radius: 4px 4px 0 0;
     width: 100%;
+}
+
+@media (max-width: 1360px){
+    .wrapper{
+        width: 1360px;
+    }
+
+    .info_box{
+        width: 60%;
+    }
+
+    .swiper{
+        gap: 30px;
+    }
 }
