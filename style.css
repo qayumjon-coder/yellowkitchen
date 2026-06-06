@@ -7,26 +7,28 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+:root {
+  --swiper-theme-color: #007aff;
+  /*
+  --swiper-preloader-color: var(--swiper-theme-color);
+  --swiper-wrapper-transition-timing-function: initial;
+  */
 }
 
-.wrapper{
-    width: 1905px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+body{
+    font-family: "Poppins", sans-serif;
 }
 
 header{
+    
+    border-bottom: 1px solid #D4D7E5;
+}
+
+.header_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
-    border-bottom: 1px solid #D4D7E5;
+    padding-block: 16px;
 }
 
 header h4{
@@ -49,27 +51,36 @@ header nav a{
 }
 
 .container{
-    display: flex;
+    max-width: 1440px;
     width: 100%;
-    justify-content: space-around;
-    margin-top: 60px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.heading{
-    padding: 20px;
-    margin-top: 100px;
+.hero_content{
     display: flex;
-    flex-direction: column;
-    gap: 150px;
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.heading .boxes{
+.hero_data {
+    width: 50%;
+}
+
+.hero_data h1 {
+    font-size: 58px;
+    font-weight: 300;
+    color: #3F4255;
+    margin-bottom: 88px;
+}
+
+.hero_data .boxes{
     display: flex;
     gap: 24px;
 }
 
-.heading .boxes a{
+.hero_data .boxes a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,26 +91,29 @@ header nav a{
     border-radius: 4px;
 }
 
-.heading .boxes a h5{
+.hero_data .boxes a h5{
     font-size: 16px;
     letter-spacing: 0.5px;
     font-weight: 600;
     color: #3F4255;
 }
 
-.heading .boxes a p{
+.hero_data .boxes a p{
     font-size: small;
 }
 
-.heading h1{
-    font-weight: 300;
-    line-height: 90px;
-    font-size: 80px;
-    letter-spacing: 5%;
-    color: #3F4255;
+.hero_image {
+    width: 50%;
 }
 
+.hero_image img {
+    width: 100%;
+}
+
+
+
 .info_box{
+    position: relative;
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -121,26 +135,23 @@ header nav a{
 
 .swipe {
     display: flex;
-    flex-direction: column;
-    width: calc(100% - 20px);
-    height: 300px;
 }
 
-.swipe .swpr_header{
+.swipe .swiper_header{
+    width: 100%;
     margin: 50px 0 50px 0;
-    display: inherit;
-    padding: 0 150px;
+    display: flex;
     justify-content: space-between;
 }
 
-.swipe .swpr_header h2{
+.swipe .swiper_header h2{
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 36px;
     color: #3F4255;
 }
 
-.swipe .swpr_header button{
+.swipe .swiper_header button{
     padding: 0 25px;
     background-color: #F2F4FA;
     color: #9093A6;
@@ -150,27 +161,46 @@ header nav a{
     border: none;
 }
 
-.swiper{
-    width: 100%;
-    height: 100%;
+.swiper-wrapper{
     display: flex;
-    gap: 135px;
-    justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .swiper .swiper-slide{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.103);
 }
 
 .swiper .swiper-slide img:first-child{
-    border-radius: 4px 4px 0 0;
+    border-radius: 10px 10px 0 0;
     width: 100%;
 }
+
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 13px;
+}
+
+/* Email section */
+
+.email_section{
+    width: 100%;
+    background-color: #F2F4FA;
+    margin-top: 72px;
+}
+
+.email_section .info_wrapper{
+    width: 50%;
+
+}
+
+
 
 @media (max-width: 1360px){
     .wrapper{
