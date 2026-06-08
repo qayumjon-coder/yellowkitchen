@@ -1,0 +1,20 @@
+:root {
+    --swiper-theme-color: #007aff;
+    --open: "Open Sans", sans-serif;
+    --martel: "Martel Sans", sans-serif;
+    --pop: "Poppins", sans-serif;
+
+    /* Colors */
+
+    /* Secondary */
+    --gray_dark: #3F4255;
+    --gray_second: #9093A6;
+    --gray_light: #D4D7E5;
+    --gray_bg: #F2F4FA;
+
+    /* Primary */
+
+    --yellow_dark: #B79C10;
+    --brand: #FFE145;
+    --yellow_light: #FFF7CC;
+}
