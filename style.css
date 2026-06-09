@@ -346,21 +346,18 @@ header nav a {
 
 .statistics {
     margin-bottom: 72px;
-}
-
-.statistics .container {
-    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/background/bg.png");
+    height: 284px;
 }
 
 .statistics_content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/images/background/bg.png");
     height: 284px;
+    gap: 40px;
 }
 
 .statistics_content span {
@@ -446,6 +443,91 @@ header nav a {
 .community .community_content .community_data{
     display: inherit;
     justify-content: space-between;
+}
+
+.footer{
+    background-color: var(--gray_dark);
+    padding: 48px;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_body .footer_logo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+}
+
+.footer_body .footer_details{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer_body .footer_details ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer_body .footer_details ul{
+    color: #fff;
+}
+
+.footer_body .footer_details ul span {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer_body .footer_details ul span li a{
+    text-decoration: none;
+    color: var(--gray_light);
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_bottom .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.footer_bottom .icons a{
+    font-size: 25px;
+    color: #fff;
+}
+
+.footer_bottom .rights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer_bottom .rights a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* var(--brand) */
