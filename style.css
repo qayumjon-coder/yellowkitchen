@@ -475,24 +475,30 @@ header nav a {
     gap: 100px;
 }
 
-.footer_body .footer_details ul{
+.footer_body .footer_details .footer_details_column {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
     gap: 20px;
 }
 
-.footer_body .footer_details ul{
+.footer_body .footer_details .footer_details_column h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.footer_body .footer_details .footer_details_column{
     color: #fff;
 }
 
-.footer_body .footer_details ul span {
+.footer_body .footer_details .footer_details_column ul {
     display: flex;
     flex-direction: column;
+    list-style-type: none;
     gap: 16px;
 }
 
-.footer_body .footer_details ul span li a{
+.footer_body .footer_details .footer_details_column ul li a{
     text-decoration: none;
     color: var(--gray_light);
 }
