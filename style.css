@@ -211,6 +211,7 @@ header nav button{
 .swiper-1-button-prev {
     background-color: #fff;
     border-radius: 50%;
+    color: var(--gray_second) !important;
     padding: 13px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.089);
 }
@@ -329,9 +330,8 @@ header nav button{
 .mySwiper .swiper-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
-    gap: 25px;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .mySwiper .swiper-slide {
@@ -355,9 +355,11 @@ header nav button{
 
 .swiper-2-button-next,
 .swiper-2-button-prev {
+    position: absolute !important;
     background-color: #fff;
     border-radius: 50%;
     padding: 13px;
+    color: var(--gray_second) !important;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.089);
 }
 
@@ -445,7 +447,7 @@ header nav button{
     justify-content: space-between;
 }
 
-.community .community_content span{
+.community .community_content h2{
     font-family: var(--pop);
     font-weight: 300;
     color: var(--gray_second);
@@ -455,7 +457,7 @@ header nav button{
     font-size: 36px;
 }
 
-.community .community_content span b{
+.community .community_content h2 b{
     color: var(--gray_dark);
 }
 
