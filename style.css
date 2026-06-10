@@ -63,6 +63,19 @@ header nav a {
     align-items: center;
 }
 
+header nav button{
+    box-shadow: 0 8px 40px #00000014;
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray_second);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -186,7 +199,7 @@ header nav a {
 
 .swiper_new .swiper-wrapper {
     display: flex;
-    padding: 20px;
+    padding: 0 0 20px 0;
 }
 
 .swiper_new .swiper-slide img:first-child {
@@ -200,6 +213,12 @@ header nav a {
     border-radius: 50%;
     padding: 13px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.089);
+}
+
+.swiper-1-button-prev{
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 /* Adress section */
@@ -482,7 +501,7 @@ header nav a {
 }
 
 .footer_body .footer_details .footer_details_column h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -501,6 +520,7 @@ header nav a {
 .footer_body .footer_details .footer_details_column ul li a{
     text-decoration: none;
     color: var(--gray_light);
+    font-size: 16px;
 }
 
 .footer_bottom{
