@@ -23,7 +23,9 @@
     <header>
       <div class="container">
         <div class="header_content">
-          <img src="images/Logo.png" alt="" />
+          <a href="">
+            <img src="images/Logo.png" alt="" />
+          </a>
 
           <nav>
             <a href="#"
@@ -33,7 +35,36 @@
               ><i class="material-symbols-outlined"> shopping_cart</i>0</a
             >
 
-            <button href=""><i class="material-symbols-outlined">menu</i> </button>
+            <button onclick="toggleSidebar()" class="menu_btn">
+              <i class="material-symbols-outlined">menu</i>
+            </button>
+
+            <div class="sidebar">
+              <div class="contact_number">
+                <i class="material-symbols-outlined"> call</i>
+
+                <span>
+                  <h3>0800 111 126</h3>
+                  <p>8:00 - 22:00</p>
+                </span>
+              </div>
+
+              <ul class="nav_links">
+                <li><a href="#">Delivery info</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Specialities</a></li>
+              </ul>
+
+              <div class="lang_change">
+                <select name="lang" id="lang">
+                  <option value="1">English</option>
+                  <option value="2">Uzbek</option>
+                  <option value="3">Russia</option>
+                </select>
+              </div>
+
+            </div>
           </nav>
         </div>
       </div>
@@ -286,8 +317,12 @@
               <a href="#"><img src="/images/logo/Logo.png" alt="Logo" /></a>
               <hr />
               <span class="apps">
-                <a href="#"><img src="images/app-img1-1.png" alt="appstore" /></a>
-                <a href="#"><img src="images/app-img2-1.png" alt="playstore" /></a>
+                <a href="#"
+                  ><img src="images/app-img1-1.png" alt="appstore"
+                /></a>
+                <a href="#"
+                  ><img src="images/app-img2-1.png" alt="playstore"
+                /></a>
               </span>
             </div>
 
@@ -343,6 +378,7 @@
       </div>
     </section>
 
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
   </body>
