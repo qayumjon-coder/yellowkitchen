@@ -66,7 +66,21 @@ header nav a {
     align-items: center;
 }
 
-header nav button{
+header nav .cart_btn{
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray_second);
+    background-color: #fff;
+    border: none;
+    gap: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+header nav .menu_btn,
+header nav .close_btn{
     box-shadow: 0 8px 40px #00000014;
     padding: 10px 10px;
     border-radius: 50%;

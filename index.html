@@ -31,16 +31,33 @@
             <a href="#"
               ><i class="material-symbols-outlined"> person</i>Login</a
             >
-            <a href="#"
-              ><i class="material-symbols-outlined"> shopping_cart</i>0</a
-            >
+            <button href="#" class="cart_btn">
+              <i class="material-symbols-outlined"> shopping_cart</i>0
+            </button>
 
             <button onclick="toggleSidebar()" class="menu_btn">
               <i class="material-symbols-outlined">menu</i>
             </button>
 
-            <div class="sidebar">
+            <!-- Cart -->
 
+            <div class="cart">
+              <div class="cart_hader">
+                <h3>Your cart</h3>
+
+                <button><i class="fa-solid fa-circle-info"></i></button>
+              </div>
+
+              <div class="cart_body">
+                <h4>Cart empty</h4>
+                <p>Wanna add someting</p>
+
+                <button>Add item</button>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
               <button onclick="toggleSidebar()" class="close_btn">
                 <i class="material-symbols-outlined">close</i>
               </button>
@@ -68,7 +85,6 @@
                   <option value="3">Russia</option>
                 </select>
               </div>
-
             </div>
           </nav>
         </div>
