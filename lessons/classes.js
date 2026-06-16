@@ -127,7 +127,7 @@ const circle2 = new Circle({
 }) */
 
 // Prototype
-const car = {
+/* const car = {
     name: "BMW",
     color: "black",
     extraBaillon: 5,
@@ -145,4 +145,4 @@ bus.name = "MAN";
 bus.extraBaillon = 10;
 bus.color = "white";
 
-const str = new String("Hello string data type")
+const str = new String("Hello string data type"); */
