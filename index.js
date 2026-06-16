@@ -1,6 +1,8 @@
 const cart_btn = document.querySelector(".cart_btn");
 const cart = document.querySelector(".cart");
 
+
+// Cart toggle
 cart_btn.addEventListener("click", () => {
 
     cart.classList.toggle("show");
@@ -10,6 +12,7 @@ cart_btn.addEventListener("click", () => {
     }, 100);
 });
 
+// Menu toggle
 function toggleSidebar() {
     const menuBtn = document.querySelector('.menu_btn');
     const sidebar = document.querySelector('.sidebar');
