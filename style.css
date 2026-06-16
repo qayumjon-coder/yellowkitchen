@@ -53,6 +53,7 @@ header h4 {
 }
 
 nav {
+    position: relative;
     display: flex;
     gap: 40px;
 }
@@ -77,6 +78,109 @@ header nav .cart_btn{
     gap: 5px;
     font-size: large;
     cursor: pointer;
+}
+
+header nav .cart{
+    position: absolute;
+    opacity: 0;
+    top: 120%;
+    display: none;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.103);
+    transition: .3s ease;
+}
+
+.cart.show{
+    display: flex;
+}
+.cart.smooth{
+    opacity: 1;
+    top: 100%;
+}
+
+.cart_hader{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    justify-content: space-between;
+    background-color: var(--brand);
+}
+
+.cart_hader span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg );
+    border-radius: 2px;
+    left: calc(50% - 20px);
+    top: -5px;
+    background-color: var(--brand);
+}
+
+.cart_hader h3{
+    color: transparent;
+    font-family: var(--pop);
+    text-transform: uppercase;
+    font-size: 20px;
+    background: linear-gradient(35deg, var(--yellow_dark) 50%, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+nav .cart_hader button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px 0 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.089);
+    color: var(--gray_dark);
+    cursor: pointer;
+}
+
+.cart_body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart_body .body_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav .cart_body button{
+    padding: 5px 20px;
+    background: var(--brand);
+    border: none;
+    color: var(--yellow_dark);
+    font-family: var(--pop);
+    border-radius: 5px;
+}   
+
+.cart_body h4{
+    color: var(--gray_dark);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cart_body p{
+    color: var(--gray_dark);
+    font-weight: 400;
+    font-size: 14px;
 }
 
 header nav .menu_btn,
