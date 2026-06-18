@@ -146,3 +146,39 @@ bus.extraBaillon = 10;
 bus.color = "white";
 
 const str = new String("Hello string data type"); */
+
+// Function constructor
+/* function User(name, id){
+    this.name = name;
+    this.id = id;
+    this.human = true;
+    this.hello = function(){
+        console.log(`Hello ${this.name}`);
+        
+    }
+}
+
+User.prototype.exit = function(){
+    console.log(`User ${this.name} exit`);
+    
+}
+
+const human = new User("Human 1", 3);
+const human2 = new User("Human 2", 4);
+const yusuf = new User("Yusuf", 5)
+
+
+human.exit()
+human2.exit()
+yusuf.hello()
+
+console.log(human);
+console.log(human2); */
+
+//
+
+
+
+
+
+
